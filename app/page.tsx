@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Header from "./components/Header";
-import Image from "next/image";
+import Footer from "./components/Footer";
 
 export default function Page() {
   const [email, setEmail] = useState("");
@@ -90,7 +91,7 @@ export default function Page() {
       </section>
 
       <section className="w-full">
-        <div className="relative container mx-auto mt-16 flex items-center gap-6 overflow-hidden rounded-4xl bg-black px-16 py-28">
+        <div className="relative container mx-auto mt-28 flex items-center gap-6 overflow-hidden rounded-4xl bg-black px-16 py-28 shadow-lg">
           <div className="flex-1 space-y-5">
             <h2 className="font-[family-name:var(--font-sora)] text-5xl leading-tight font-bold text-white">
               Give a code. Get a client. Share the reward.
@@ -115,14 +116,69 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="w-full">
+        <div className="container mx-auto mt-40 text-center">
+          <h2 className="e font-[family-name:var(--font-sora)] text-5xl leading-tight font-bold">
+            Whats Makes Us Different?
+          </h2>
+          <p className="mx-auto max-w-[1200px] pt-4 font-[family-name:var(--font-open-sans)] text-lg text-neutral-700">
+            Most clients don’t leave because they’re unhappy — they leave
+            because they forget to return. Retaini helps you stay top-of-mind
+            with effortless follow-ups, loyalty rewards, and referrals — so your
+            clients come back naturally and consistently.
+          </p>
+        </div>
+      </section>
+      <section className="w-full">
+        <div className="container mx-auto mt-16 flex gap-5">
+          <div className="h-[600px] flex-1 rounded-4xl bg-red-500"></div>
+          <div className="h-[600px] flex-1 rounded-4xl bg-blue-500"></div>
+          <div className="h-[600px] flex-1 rounded-4xl bg-green-500"></div>
+        </div>
+      </section>
+
       {/* Problem Section */}
       {/* <WhyClients /> */}
 
       {/* Solution Section */}
       {/* <SolutionSection /> */}
 
+      {/* CTA Section */}
+      <section className="w-full">
+        <div className="relative container mx-auto mt-28 items-center gap-6 overflow-hidden rounded-4xl bg-black px-16 py-28 shadow-lg">
+          <div className="space-y-5">
+            <h2 className="font-[family-name:var(--font-sora)] text-5xl leading-tight font-bold text-white">
+              Get early access & a free month.
+            </h2>
+            <p className="font-[family-name:var(--font-open-sans)] text-lg text-neutral-300">
+              We’re building Retaini for real service providers — just like you.
+              By joining early, you’ll be among the first to experience how easy
+              client retention can be. No pressure. No commitments. Just better
+              client relationships, on autopilot.
+            </p>
+            <div className="relative mt-8 flex w-[550px] gap-2">
+              <input
+                type="email"
+                placeholder="Your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="w-full rounded-full bg-white py-5 pl-8 text-base font-medium text-black focus:outline-none"
+              />
+              <button
+                className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full bg-black px-8 py-[12px] text-base font-medium text-white transition-colors duration-200 ease-in-out hover:bg-black/80"
+                onClick={() => {}}
+              >
+                Join
+              </button>
+            </div>
+          </div>
+
+          <div className="absolute -top-10 right-[150px] w-[500px] rotate-[30deg] rounded-full border-2 border-white/30 bg-white/10 py-8 backdrop-blur-lg"></div>
+        </div>
+      </section>
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

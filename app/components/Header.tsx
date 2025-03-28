@@ -14,7 +14,7 @@ const Header = () => {
               src="/retaini-black-logo.png"
               alt="Retaini Logo"
               className="pl-2"
-              width={120}
+              width={130}
               height={100}
             />
           </div>
@@ -25,9 +25,6 @@ const Header = () => {
               </li>
               <li className="transition-colors duration-200 ease-in-out hover:text-black/60">
                 <Link href="https://retaini.com">Features</Link>
-              </li>
-              <li className="transition-colors duration-200 ease-in-out hover:text-black/60">
-                <Link href="https://retaini.com">About Us</Link>
               </li>
               <li className="transition-colors duration-200 ease-in-out hover:text-black/60">
                 <Link href="https://retaini.com">Why Retaini</Link>
