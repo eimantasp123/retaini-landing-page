@@ -36,11 +36,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${sora.variable} ${workSans.variable} ${openSans.variable} antialiased`}
-    >
-      <body className="antialiased">{children}</body>
+    <html lang="en">
+      <body
+        className={`${sora.variable} ${workSans.variable} ${openSans.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
