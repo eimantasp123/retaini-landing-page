@@ -22,11 +22,11 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title:
-    "Retaini – Simple Client Retention & Referral Platform for Service Businesses",
+    "Retaini – Paprasta Klientų Išlaikymo ir Rekomendacijų Platforma Paslaugų Verslams",
   description:
-    "Retaini helps service businesses boost client loyalty and get more referrals with automated follow-ups, rewards, and personalized engagement.",
+    "Retaini padeda paslaugų verslams didinti klientų lojalumą ir gauti daugiau rekomendacijų su automatizuotais priminimais, apdovanojimais ir asmeniniu bendravimu.",
   icons: {
-    icon: "/favicon.png", // or .png or .svg
+    icon: "/favicon.png", // arba .png arba .svg
   },
 };
 
