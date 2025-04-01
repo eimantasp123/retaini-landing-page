@@ -6,9 +6,25 @@ import HeroSection from "./components/HeroSection";
 import HowRetainiWorks from "./components/HowRetainiWorks";
 import WhyRetaini from "./components/WhyRetaini";
 
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "HomePage" });
+
+  return {
+    title: t("MetaData.title"),
+    description: t("MetaData.description"),
+  };
+}
+
 export default function Page() {
   return (
-    <div className="flex h-[3000px] min-h-screen flex-col">
+    <div className="flex flex-col">
       {/* Header */}
       <Header />
 

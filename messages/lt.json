@@ -1,0 +1,108 @@
+{
+  "HomePage": {
+    "MetaData": {
+      "title": "Retaini – Paprasta Klientų Išlaikymo ir Rekomendacijų Platforma Paslaugų Verslams",
+      "description": "Retaini padeda paslaugų verslams didinti klientų lojalumą ir gauti daugiau rekomendacijų su automatizuotais priminimais, apdovanojimais ir asmeniniu bendravimu."
+    },
+
+    "Header": {
+      "home": "Pradžia",
+      "whyRetaini": "Kodėl Retaini?",
+      "howRetainiWorks": "Kaip veikia Retaini",
+      "learnMore": "Sužinokite daugiau",
+      "lithuanian": "Lietuvių",
+      "english": "Anglų"
+    },
+
+    "Hero": {
+      "title": "Auginkite savo verslą per lojalių klientų rekomendacijas.",
+      "description": "Retaini yra paprasta lojalumo ir rekomendacijų platforma, sukurta mažiems paslaugų verslams, kurie nori augti natūraliai. Paverskite patenkintus klientus į žmones, kurie kalba apie jus geriau nei bet kokia reklama – lengvai, be sudėtingų sistemų.",
+      "joinToWaitListDescription": "Prisijunk prie laukiančiųjų sąrašo ir išbandyk Retaini pirmas!",
+      "join": "Prisijungti",
+      "yourEmail": "Jūsų el. pašto adresą",
+      "joinWaitlistSubtitle": " 100+ žmonių prisijungė prie laukiančiųjų sąrašo"
+    },
+
+    "WhyRetaini": {
+      "title": "Pasidalink kodu. Gauk naują klientą. Augink verslą.",
+      "description": "Retaini sukurta smulkiems paslaugų verslams, kurie vertina paprastumą. Jokio CRM, jokių painių sistemų – tik patenkinti klientai, kurie dalijasi unikaliai QR kodais su draugais ir padeda verslui augti iš lūpų į lūpas."
+    },
+
+    "HowRetainiWorks": {
+      "title": "Kaip veikia Retaini",
+      "description": "Retaini leidžia patenkintiems klientams tapti jūsų verslo augimo dalimi – greitai ir paprastai.",
+      "steps": {
+        "1": {
+          "title": "Kliento pridėjimas",
+          "description": "Paprasčiausiai pridėkite klientą – nurodykite vardą ir el. pašto adresą. Retaini sugeneruos du QR kodus: vienas skirtas dalintis su draugais, kitas – kliento identifikacijai. Šis žmogus tampa jūsų lojaliu klientu ir gauna sveikinimo laišką su instrukcijomis.",
+          "image": "/step-1.png"
+        },
+        "2": {
+          "title": "Klientas dalijasi, naujas žmogus atvyksta",
+          "description": " Lojalus klientas pasidalina asmeniniu QR kodu arba nuoroda su draugu. Kai naujas klientas atvyksta ir parodo šį kodą, jūs jį tiesiog nuskenuojate. Sistema automatiškai atpažįsta, kuris lojalus klientas pasidalino kodu, ir parodo, ką naujai atėjęs klientas gauna pagal jūsų nustatytą dovanų planą.",
+          "image": "/step-2.png"
+        },
+        "3": {
+          "title": "Klientas pasiekia dovaną",
+          "description": "Kai lojalus klientas pasiekia nustatytą atvestų žmonių skaičių, sistema automatiškai įtraukia jį į dovanų laukiančių sąrašą. Tai aiškiai matysite pagrindiniame valdymo puslapyje. Tuo pačiu klientui išsiunčiamas sveikinimo laiškas su priminimu apie laukiančią dovaną.",
+          "image": "/step-3.png"
+        },
+        "4": {
+          "title": "Sugrįžta lojalus klientas",
+          "description": " Kai klientas sugrįžta, jį galima lengvai atpažinti sistemoje – nuskenavus jo asmeninį identifikacijos QR kodą arba suradus pagal el. paštą. Sistema parodys, ar klientui priklauso dovana, ir kiek dar trūksta iki kitos. Vienu paspaudimu pažymėkite, kad dovana atiduota.",
+          "image": "/step-4.png"
+        }
+      }
+    },
+
+    "AppFuncionality": {
+      "title": "Platformos funkcionalumas",
+      "description": "Paprastas Retaini funkcionalumas leidžiantis jums susitelkti į tai kas svarbiausia.",
+      "features": {
+        "1": {
+          "title": "Greitas kliento pridėjimas",
+          "description": " Greitai pridėkite naują klientą įvesdami tik vardą ir el. pašto adresą. Retaini automatiškai sukuria dalinamą QR kodą ir asmeninį identifikacijos kodą."
+        },
+        "2": {
+          "title": "Automatiniai priminimai ir laiškai",
+          "description": "Sveikinimo laiškai, padėkos, dovanų priminimai – visa tai siunčiama automatiškai, be jokio rankinio darbo."
+        },
+        "3": {
+          "title": "Referalų sekimas realiu laiku",
+          "description": "Kai tik nuskenuojamas QR kodas, Retaini iškart atnaujina kliento progresą – nieko nereikia skaičiuoti rankiniu būdu."
+        },
+        "4": {
+          "title": "Dovanų valdymas",
+          "description": "Sukurkite savo dovanų tipus pagal referalų skaičių, matykite, kas jau užsitarnavo dovaną ir pažymėkite ją kaip atiduotą vienu paspaudimu."
+        },
+        "5": {
+          "title": "Klientų paieška ir QR nuskaitymas",
+          "description": "Suraskite bet kurį klientą nuskenavę QR kodą arba pagal el. paštą – iškart matysite jo statusą, referalų istoriją ir laukiančias dovanas."
+        },
+        "6": {
+          "title": "Personalizuojami laiškų šablonai",
+          "description": "Redaguokite ir peržiūrėkite automatinius laiškus kiekvienam žingsniui – naujas klientas, sėkmingas referalas ar pasiekta dovana."
+        }
+      }
+    },
+
+    "CtaSection": {
+      "description": "Gauk ankstyvą prieigą prie Retaini, 1 mėnesį nemokamai ir galimybę padėti formuoti platformą dar prieš oficialų startą. Vieta garantuota – prisijungti verta!",
+      "alreadyOnTheList": "100+ žmonių jau prisijungė"
+    },
+
+    "Footer": {
+      "title": "Visos teisės saugomos © 2025 Retaini"
+    },
+
+    "Waitlist": {
+      "error": {
+        "invalidEmail": "Neteisingas el. paštas",
+        "duplicateEmail": "Šis el. paštas jau užregistruotas",
+        "failedToSave": "Nepavyko išsaugoti",
+        "tooManyRequests": "Per daug užklausų, bandykite dar kartą vėliau"
+      },
+      "success": "Jūs jau laukiančiųjų sąraše! 🎉"
+    }
+  }
+}

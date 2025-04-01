@@ -1,0 +1,70 @@
+import {
+  Gift,
+  Mail,
+  NotepadTextDashed,
+  QrCode,
+  ScanSearch,
+  UserRoundPlus,
+} from "lucide-react";
+import { useTranslations } from "next-intl";
+import { JSX } from "react";
+
+const AppFuncionality = () => {
+  const t = useTranslations("HomePage");
+
+  const translationsIcons: Record<string, JSX.Element> = {
+    "1": <UserRoundPlus />,
+    "2": <Mail />,
+    "3": <QrCode />,
+    "4": <Gift />,
+    "5": <ScanSearch />,
+    "6": <NotepadTextDashed />,
+  };
+
+  const features = t.raw("AppFuncionality.features") as Record<
+    string,
+    { title: string; description: string }
+  >;
+
+  return (
+    <section id="how-retaini-helps" className="font-open-sans w-full py-28">
+      <div className="container mx-auto">
+        <div className="mb-16 text-center">
+          <h2 className="font-sora text-5xl leading-tight font-bold text-neutral-900">
+            {t("AppFuncionality.title")}
+          </h2>
+          <p className="mx-auto mt-4 text-lg text-neutral-600">
+            {t("AppFuncionality.description")}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          {/* 1 */}
+
+          {Object.entries(features).map(([key, feature]) => (
+            <div
+              key={key}
+              className="shadow-light flex items-center gap-3 rounded-3xl border border-neutral-200/50 bg-[#f1ebf7] p-6"
+            >
+              <div className="flex w-[20%] items-center justify-center">
+                <span className="flex size-12 items-center justify-center rounded-full bg-white text-xl">
+                  {translationsIcons[key]}
+                </span>
+              </div>
+              <div>
+                <h3 className="mb-1 text-xl font-semibold text-neutral-900">
+                  {feature.title}
+                </h3>
+                <p className="text-base text-neutral-600">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AppFuncionality;

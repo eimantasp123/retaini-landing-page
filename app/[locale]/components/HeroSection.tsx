@@ -1,13 +1,14 @@
-"use client";
-
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import React from "react";
+import JoinToWaitlistForm from "./JoinToWaitlistForm";
 
 const HeroSection = () => {
+  const t = useTranslations("HomePage");
+
   return (
     <section
       id="hero"
-      className="relative flex min-h-[80vh] items-center overflow-hidden py-16 md:py-24"
+      className="relative flex h-auto items-center overflow-hidden py-16 md:py-28"
     >
       {/* Background image and color overlay */}
       <div className="absolute inset-0">
@@ -21,34 +22,16 @@ const HeroSection = () => {
       {/* Content */}
       <div className="font-open-sans relative z-10 container mx-auto mt-10 px-4">
         <div className="mx-auto max-w-6xl space-y-3 text-center">
-          <h1 className="font-sora px-8 text-3xl font-bold md:text-7xl lg:px-0 lg:leading-[80px]">
-            Auginkite savo verslą per lojalių klientų rekomendacijas.
+          <h1 className="font-sora px-8 text-3xl font-bold md:text-6xl lg:px-0">
+            {t("Hero.title")}
           </h1>
-          <p className="text-md mx-auto mt-8 max-w-4xl text-gray-700 md:text-xl">
-            Retaini yra paprasta lojalumo ir rekomendacijų platforma mažiems
-            paslaugų verslams. Paverskite savo ištikimus klientus į
-            profesionalius verslo skleidejus, kurie kalba apie jus geriau nei
-            bet kokia reklama.
+          <p className="text-md mx-auto mt-8 max-w-4xl text-gray-700 md:text-lg">
+            {t("Hero.description")}
           </p>
           <h5 className="mt-10 mb-5 font-semibold">
-            Prisijunk prie laukiančiųjų sąrašo ir išbandyk Retaini pirmas!
+            {t("Hero.joinToWaitListDescription")}
           </h5>
-          <div className="shadow-soft relative mx-auto mt-2 flex max-w-[550px] min-w-[350px] gap-2 rounded-full">
-            <input
-              type="email"
-              placeholder="Jūsų el. pašto adresą"
-              value={""}
-              onChange={() => {}}
-              required
-              className="w-full rounded-full bg-white py-5 pl-8 text-base font-medium text-black focus:outline-none"
-            />
-            <button
-              className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full bg-black px-6 py-[12px] text-base font-medium text-white transition-colors duration-200 ease-in-out hover:bg-black/80 lg:px-8"
-              onClick={() => {}}
-            >
-              Prisijungti
-            </button>
-          </div>
+          <JoinToWaitlistForm />
           <div className="inline-flex items-center gap-3 rounded-full px-4 py-2 text-black">
             {/* Avatars */}
             <div className="flex -space-x-2">
@@ -76,9 +59,7 @@ const HeroSection = () => {
             </div>
 
             {/* Text */}
-            <p className="text-[17px] font-medium">
-              100+ žmonių prisijungė prie laukiančiųjų sąrašo
-            </p>
+            <p className="font-medium">{t("Hero.joinWaitlistSubtitle")}</p>
           </div>
         </div>
       </div>
