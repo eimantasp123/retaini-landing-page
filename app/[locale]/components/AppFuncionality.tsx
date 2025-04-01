@@ -27,13 +27,16 @@ const AppFuncionality = () => {
   >;
 
   return (
-    <section id="how-retaini-helps" className="font-open-sans w-full py-28">
+    <section
+      id="how-retaini-helps"
+      className="font-open-sans w-full px-4 py-10 lg:py-28"
+    >
       <div className="container mx-auto">
-        <div className="mb-16 text-center">
-          <h2 className="font-sora text-5xl leading-tight font-bold text-neutral-900">
+        <div className="mb-10 text-center lg:mb-16">
+          <h2 className="font-sora text-2xl leading-tight font-bold text-neutral-900 md:text-4xl lg:text-5xl">
             {t("AppFuncionality.title")}
           </h2>
-          <p className="mx-auto mt-4 text-lg text-neutral-600">
+          <p className="mx-auto mt-4 text-neutral-600 lg:text-lg">
             {t("AppFuncionality.description")}
           </p>
         </div>
@@ -44,15 +47,15 @@ const AppFuncionality = () => {
           {Object.entries(features).map(([key, feature]) => (
             <div
               key={key}
-              className="shadow-light flex items-center gap-3 rounded-3xl border border-neutral-200/50 bg-[#f1ebf7] p-6"
+              className="shadow-light flex flex-col items-center gap-3 rounded-3xl border border-neutral-200/50 bg-[#f1ebf7] p-4 lg:flex-row lg:gap-4 lg:p-6"
             >
               <div className="flex w-[20%] items-center justify-center">
                 <span className="flex size-12 items-center justify-center rounded-full bg-white text-xl">
                   {translationsIcons[key]}
                 </span>
               </div>
-              <div>
-                <h3 className="mb-1 text-xl font-semibold text-neutral-900">
+              <div className="text-center lg:text-left">
+                <h3 className="mb-1 text-lg font-semibold text-neutral-900 lg:text-xl">
                   {feature.title}
                 </h3>
                 <p className="text-base text-neutral-600">

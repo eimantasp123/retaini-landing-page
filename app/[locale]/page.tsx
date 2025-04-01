@@ -24,7 +24,7 @@ export async function generateMetadata({
 
 export default function Page() {
   return (
-    <div className="flex flex-col">
+    <>
       {/* Header */}
       <Header />
 
@@ -44,6 +44,6 @@ export default function Page() {
       <CtaSection />
       {/* Footer */}
       <Footer />
-    </div>
+    </>
   );
 }

@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex h-auto items-center overflow-hidden py-16 md:py-28"
+      className="relative flex h-auto items-center overflow-hidden py-24 md:py-28 xl:py-40"
     >
       {/* Background image and color overlay */}
       <div className="absolute inset-0">
@@ -21,8 +21,8 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="font-open-sans relative z-10 container mx-auto mt-10 px-4">
-        <div className="mx-auto max-w-6xl space-y-3 text-center">
-          <h1 className="font-sora px-8 text-3xl font-bold md:text-6xl lg:px-0">
+        <div className="mx-auto space-y-3 text-center lg:max-w-6xl">
+          <h1 className="font-sora text-4xl font-bold md:text-5xl lg:px-0 lg:text-6xl">
             {t("Hero.title")}
           </h1>
           <p className="text-md mx-auto mt-8 max-w-4xl text-gray-700 md:text-lg">
@@ -32,7 +32,7 @@ const HeroSection = () => {
             {t("Hero.joinToWaitListDescription")}
           </h5>
           <JoinToWaitlistForm />
-          <div className="inline-flex items-center gap-3 rounded-full px-4 py-2 text-black">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 rounded-full px-4 py-2 text-black sm:flex-row lg:mt-4">
             {/* Avatars */}
             <div className="flex -space-x-2">
               <Image
@@ -66,7 +66,7 @@ const HeroSection = () => {
 
       <div className="absolute right-0 bottom-0 z-0 hidden w-[500px] rotate-[30deg] rounded-full border-2 border-white bg-white/20 py-8 backdrop-blur-lg lg:flex"></div>
       <div className="absolute -right-[150px] bottom-7 z-0 hidden w-[400px] rotate-[30deg] rounded-full border-2 border-white bg-white/20 py-8 backdrop-blur-lg lg:flex"></div>
-      <div className="absolute bottom-7 -left-[150px] z-0 hidden w-[600px] rotate-[30deg] rounded-full border-2 border-white bg-white/20 py-8 backdrop-blur-lg lg:flex"></div>
+      <div className="absolute bottom-7 -left-[300px] z-0 w-[600px] rotate-[30deg] rounded-full border-2 border-white bg-white/20 py-8 backdrop-blur-lg md:-left-[170px] lg:flex"></div>
     </section>
   );
 };
