@@ -49,12 +49,12 @@ const AppFuncionality = () => {
               key={key}
               className="shadow-light flex flex-col items-center gap-3 rounded-3xl border border-neutral-200/50 bg-[#f1ebf7] p-4 lg:flex-row lg:gap-4 lg:p-6"
             >
-              <div className="flex w-[20%] items-center justify-center">
+              <div className="flex items-center justify-center lg:w-[12%]">
                 <span className="flex size-12 items-center justify-center rounded-full bg-white text-xl">
                   {translationsIcons[key]}
                 </span>
               </div>
-              <div className="text-center lg:text-left">
+              <div className="flex-1 text-center lg:text-left">
                 <h3 className="mb-1 text-lg font-semibold text-neutral-900 lg:text-xl">
                   {feature.title}
                 </h3>

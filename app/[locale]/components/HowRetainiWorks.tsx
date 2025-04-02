@@ -15,13 +15,13 @@ const HowRetainiWorks = () => {
           <h2 className="font-sora text-2xl leading-tight font-bold md:text-4xl lg:text-5xl">
             {t("HowRetainiWorks.title")}
           </h2>
-          <p className="font-open-sans mx-auto pt-4 text-neutral-600 lg:text-lg">
+          <p className="font-open-sans mx-auto max-w-4xl pt-4 text-neutral-600 lg:text-lg">
             {t("HowRetainiWorks.description")}
           </p>
         </div>
       </div>
       {/* Step 1 */}
-      <div className="container mx-auto px-4 lg:space-y-40 lg:py-20">
+      <div className="container mx-auto px-4 lg:space-y-40 lg:px-20 lg:py-20">
         {Object.entries(steps).map(([key, step], index) => {
           const isEven = index % 2 === 1;
           return (
@@ -35,7 +35,9 @@ const HowRetainiWorks = () => {
                 <h2 className="mb-4 text-6xl font-bold text-neutral-300">
                   {key.padStart(2, "0")}
                 </h2>
-                <h1 className="font-sora text-xl font-bold">{step.title}</h1>
+                <h1 className="font-sora text-xl font-bold lg:text-3xl">
+                  {step.title}
+                </h1>
                 <p className="pt-3 text-neutral-600 lg:text-lg">
                   {step.description}
                 </p>

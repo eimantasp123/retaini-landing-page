@@ -1,8 +1,8 @@
 {
   "HomePage": {
     "MetaData": {
-      "title": "Retaini – A Simple Customer Retention and Referral Platform for Service Businesses",
-      "description": "Retaini helps service businesses increase customer loyalty and gain more referrals with automated reminders, rewards, and personalized communication."
+      "title": "Retaini – Smart Loyalty and Referral Tool for Service Businesses",
+      "description": "Retaini helps service businesses build strong relationships with clients, encouraging them to return and share referrals through automated reminders, rewards, and personalized communication."
     },
 
     "Header": {
@@ -24,71 +24,70 @@
     },
 
     "WhyRetaini": {
-      "title": "Share a code. Get a new client. Grow your business.",
-      "description": "Retaini is designed for small service businesses that value simplicity. No CRM, no complex systems – just satisfied customers who share unique QR codes with friends and help your business grow through word of mouth."
+      "title": "Share a code. Get a new customer. Grow your business.",
+      "description": "Retaini is designed for small service businesses that value simplicity. No CRM, no complicated systems – just satisfied customers sharing unique QR codes with friends and helping your business grow through word of mouth."
     },
 
     "HowRetainiWorks": {
       "title": "How Retaini Works",
-      "description": "Retaini allows satisfied customers to become part of your business growth – quickly and easily.",
+      "description": "Retaini allows your loyal customers to help grow your business – by sharing a code, inviting friends, and earning rewards for loyalty.",
       "steps": {
         "1": {
           "title": "Adding a Customer",
-          "description": "Simply add a customer – provide their name and email address. Retaini will generate two QR codes: one for sharing with friends and another for customer identification. This person becomes your loyal customer and receives a welcome email with instructions.",
+          "description": "Add a customer to the system by entering their name and email. Retaini will generate two QR codes: one for sharing with friends and another for customer identification. A welcome email with instructions on how to use the code and share referrals is automatically sent to the customer.",
           "image": "/step-1.png"
         },
         "2": {
-          "title": "Customer Shares, New Client Arrives",
-          "description": "The loyal customer shares their personal QR code or link with a friend. When the new customer arrives and shows this code, you simply scan it. The system automatically identifies which loyal customer shared the code and displays what the new customer receives based on your set gift plan.",
+          "title": "Customer Shares, New Visitor Arrives",
+          "description": "An existing customer shares their QR code or invitation link with a friend. When a new visitor arrives and shows this code, you simply scan it. The system automatically identifies which customer shared the code and shows what the new visitor receives based on your set reward plan.",
           "image": "/step-2.png"
         },
         "3": {
-          "title": "Customer Reaches a Reward",
-          "description": "When a loyal customer reaches the set number of referred people, the system automatically adds them to the reward waiting list. This will be clearly visible on the main dashboard. At the same time, the customer receives a congratulatory email with a reminder about their pending reward.",
+          "title": "Reward Achieved",
+          "description": "When the number of referrals reaches the set threshold, the referring customer is automatically added to the list of pending reward recipients. This will be clearly visible on the main dashboard. At the same time, a notification is sent to the customer reminding them of their pending reward.",
           "image": "/step-3.png"
         },
         "4": {
-          "title": "Loyal Customer Returns",
-          "description": "When the customer returns, they can be easily identified in the system – by scanning their personal identification QR code or searching by email. The system will show if the customer is eligible for a reward and how much is left until the next one. With one click, you can mark the reward as given.",
+          "title": "Returning Registered Customer",
+          "description": "When a customer returns, they can be easily identified in the system – by scanning their personal identification QR code or searching by email. The system will show if the customer is eligible for a reward and how much is left until the next one. Mark the reward as given with a single click.",
           "image": "/step-4.png"
         }
       }
     },
 
     "AppFuncionality": {
-      "title": "Platform Functionality",
-      "description": "Simple Retaini functionality that allows you to focus on what matters most.",
+      "title": "Key Features",
+      "description": "Simple functionality that allows you to focus on what matters most.",
       "features": {
         "1": {
           "title": "Quick Customer Addition",
-          "description": "Quickly add a new customer by entering only their name and email address. Retaini automatically generates a shareable QR code and a personal identification code."
+          "description": "Quickly add a new customer by entering just their name and email address. Retaini automatically creates a shareable QR code and a personal identification code."
         },
         "2": {
           "title": "Automated Reminders and Emails",
-          "description": "Welcome emails, thank-you notes, gift reminders – all sent automatically, without any manual work."
+          "description": "Welcome emails, thank-you notes, reward reminders – all sent automatically, without any manual work."
         },
         "3": {
           "title": "Real-Time Referral Tracking",
           "description": "As soon as a QR code is scanned, Retaini instantly updates the customer's progress – no manual calculations needed."
         },
         "4": {
-          "title": "Gift Management",
-          "description": "Create your own gift types based on the number of referrals, see who has earned a gift, and mark it as given with one click."
+          "title": "Reward Management",
+          "description": "Create your own reward types based on referral counts, see who has earned a reward, and mark it as given with a single click."
         },
         "5": {
           "title": "Customer Search and QR Scanning",
-          "description": "Find any customer by scanning their QR code or searching by email – instantly see their status, referral history, and pending gifts."
+          "description": "Find any customer by scanning their QR code or searching by email – instantly see their status, referral history, and pending rewards."
         },
         "6": {
           "title": "Customizable Email Templates",
-          "description": "Edit and preview automated emails for every step – new customer, successful referral, or earned gift."
+          "description": "Edit and preview automated emails for every step – new customer, successful referral, or achieved reward."
         }
       }
     },
 
     "CtaSection": {
-      "description": "Get early access to Retaini, 1 month free, and the opportunity to help shape the platform before the official launch. Your spot is guaranteed – it's worth joining!",
-      "alreadyOnTheList": "100+ people have already joined"
+      "description": "Get early access to Retaini – 1 month free usage and the opportunity to shape the platform's future with us."
     },
 
     "Footer": {

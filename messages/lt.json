@@ -1,8 +1,8 @@
 {
   "HomePage": {
     "MetaData": {
-      "title": "Retaini – Paprasta Klientų Išlaikymo ir Rekomendacijų Platforma Paslaugų Verslams",
-      "description": "Retaini padeda paslaugų verslams didinti klientų lojalumą ir gauti daugiau rekomendacijų su automatizuotais priminimais, apdovanojimais ir asmeniniu bendravimu."
+      "title": "Retaini – Išmanus Lojalumo ir Rekomendacijų Įrankis Paslaugų Verslui",
+      "description": "Retaini padeda paslaugų verslams kurti tvirtus ryšius su klientais, skatinant juos sugrįžti ir dalintis rekomendacijomis per automatizuotus priminimus, apdovanojimus ir suasmenintą bendravimą."
     },
 
     "Header": {
@@ -30,34 +30,34 @@
 
     "HowRetainiWorks": {
       "title": "Kaip veikia Retaini",
-      "description": "Retaini leidžia patenkintiems klientams tapti jūsų verslo augimo dalimi – greitai ir paprastai.",
+      "description": "Retaini leidžia jūsų ištikimiems klientams padėti plėsti verslą – dalijantis kodu, kviečiant draugus ir gaunant apdovanojimus už lojalumą.",
       "steps": {
         "1": {
           "title": "Kliento pridėjimas",
-          "description": "Paprasčiausiai pridėkite klientą – nurodykite vardą ir el. pašto adresą. Retaini sugeneruos du QR kodus: vienas skirtas dalintis su draugais, kitas – kliento identifikacijai. Šis žmogus tampa jūsų lojaliu klientu ir gauna sveikinimo laišką su instrukcijomis.",
+          "description": "Įtraukite klientą į sistemą nurodydami jo vardą ir el. paštą. Retaini sugeneruos du QR kodus: vienas skirtas dalintis su draugais, kitas – kliento identifikacijai. Klientui automatiškai išsiunčiamas sveikinimo laiškas su instrukcijomis, kaip naudoti kodą ir dalintis rekomendacija.",
           "image": "/step-1.png"
         },
         "2": {
-          "title": "Klientas dalijasi, naujas žmogus atvyksta",
-          "description": " Lojalus klientas pasidalina asmeniniu QR kodu arba nuoroda su draugu. Kai naujas klientas atvyksta ir parodo šį kodą, jūs jį tiesiog nuskenuojate. Sistema automatiškai atpažįsta, kuris lojalus klientas pasidalino kodu, ir parodo, ką naujai atėjęs klientas gauna pagal jūsų nustatytą dovanų planą.",
+          "title": "Klientas dalijasi, naujas lankytojas atvykst",
+          "description": "Esamas klientas pasidalina savo QR kodu arba kvietimo nuoroda su draugu. Kai naujas lankytojas atvyksta ir parodo šį kodą, jūs jį tiesiog nuskenuojate. Sistema automatiškai atpažįsta, kuris klientas pasidalino kodu, ir parodo, ką naujai atėjęs klientas gauna pagal jūsų nustatytą dovanų planą.",
           "image": "/step-2.png"
         },
         "3": {
-          "title": "Klientas pasiekia dovaną",
-          "description": "Kai lojalus klientas pasiekia nustatytą atvestų žmonių skaičių, sistema automatiškai įtraukia jį į dovanų laukiančių sąrašą. Tai aiškiai matysite pagrindiniame valdymo puslapyje. Tuo pačiu klientui išsiunčiamas sveikinimo laiškas su priminimu apie laukiančią dovaną.",
+          "title": "Pasiekiamas apdovanojimas",
+          "description": "Kai kvietimų skaičius pasiekia nustatytą ribą, referuojantis klientas automatiškai įtraukiamas į laukiančių apdovanojimo gavėjų sąrašą. Tai aiškiai matysite pagrindiniame valdymo puslapyje. Tuo pačiu išsiunčiamas pranešimas klientui su priminimu apie laukiančią dovaną.",
           "image": "/step-3.png"
         },
         "4": {
-          "title": "Sugrįžta lojalus klientas",
-          "description": " Kai klientas sugrįžta, jį galima lengvai atpažinti sistemoje – nuskenavus jo asmeninį identifikacijos QR kodą arba suradus pagal el. paštą. Sistema parodys, ar klientui priklauso dovana, ir kiek dar trūksta iki kitos. Vienu paspaudimu pažymėkite, kad dovana atiduota.",
+          "title": "Sugrįžta registruotas klientas",
+          "description": "Kai klientas sugrįžta, jį galima lengvai atpažinti sistemoje – nuskenavus jo asmeninį identifikacijos QR kodą arba suradus pagal el. paštą. Sistema parodys, ar klientui priklauso dovana, ir kiek dar trūksta iki kitos. Vienu paspaudimu pažymėkite, kad dovana atiduota.",
           "image": "/step-4.png"
         }
       }
     },
 
     "AppFuncionality": {
-      "title": "Platformos funkcionalumas",
-      "description": "Paprastas Retaini funkcionalumas leidžiantis jums susitelkti į tai kas svarbiausia.",
+      "title": "Pagrindinės funkcijos",
+      "description": "Paprastas funkcionalumas leidžiantis jums susitelkti į tai kas svarbiausia.",
       "features": {
         "1": {
           "title": "Greitas kliento pridėjimas",
@@ -87,8 +87,7 @@
     },
 
     "CtaSection": {
-      "description": "Gauk ankstyvą prieigą prie Retaini, 1 mėnesį nemokamai ir galimybę padėti formuoti platformą dar prieš oficialų startą. Vieta garantuota – prisijungti verta!",
-      "alreadyOnTheList": "100+ žmonių jau prisijungė"
+      "description": "Gaukite ankstyvą prieigą prie Retaini – 1 mėnesio nemokamas naudojimas ir galimybė formuoti platformos ateitį kartu su mumis."
     },
 
     "Footer": {

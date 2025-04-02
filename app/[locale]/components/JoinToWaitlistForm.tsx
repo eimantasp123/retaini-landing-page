@@ -31,7 +31,7 @@ const JoinToWaitlistForm = ({
   return (
     <form
       action={handleSubmit}
-      className="relative mx-auto mt-2 flex max-w-[500px] min-w-[300px] flex-col gap-3 rounded-full sm:flex-row"
+      className="relative mx-auto mt-2 flex max-w-[500px] min-w-[200px] flex-col gap-3 rounded-full sm:flex-row"
     >
       <input
         type="email"
