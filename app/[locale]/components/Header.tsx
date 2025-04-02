@@ -2,6 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import ChangeLanguage from "./ChangeLanguage";
+import MobileMenuButton from "./MobileMenuButton";
 
 const Header = () => {
   const t = useTranslations("HomePage");
@@ -10,8 +11,8 @@ const Header = () => {
     <section
       className={`font-open-sans fixed top-0 right-0 left-0 z-50 container mx-auto mt-4`}
     >
-      <header className="mx-4 max-w-[1400px] rounded-full border border-neutral-200 bg-gradient-to-l from-[#f3f0f7]/90 from-25% to-[#e5d2fad4]/80 backdrop-blur-2xl">
-        <div className="container mx-auto flex items-center justify-between p-3">
+      <header className="relative mx-4 max-w-[1400px] rounded-full border border-neutral-200 bg-gradient-to-l from-[#f3f0f7]/90 from-25% to-[#e5d2fad4]/80 backdrop-blur-2xl">
+        <div className="container mx-auto flex items-center justify-between px-6 py-[6px] lg:p-3">
           <div className="w-[100px] lg:w-[250px]">
             <Image
               src="/retaini-black-logo.png"
@@ -36,7 +37,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="flex w-[100px] items-center justify-end gap-5 lg:w-[250px]">
+          <div className="flex w-[100px] items-center justify-end gap-3 lg:w-[250px] lg:gap-5">
             <ChangeLanguage />
             <Link
               href="#how-retaini-helps"
@@ -44,6 +45,7 @@ const Header = () => {
             >
               <span>{t("Header.learnMore")}</span>
             </Link>
+            <MobileMenuButton />
           </div>
         </div>
       </header>
