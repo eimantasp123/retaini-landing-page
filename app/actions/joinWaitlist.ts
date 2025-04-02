@@ -20,7 +20,7 @@ const ratelimit = new Ratelimit({
 });
 
 // Define the email schema using Zod
-const emailSchema = z.string().email();
+const emailSchema = z.string().email().max(150);
 
 /**
  * Function to join the waitlist.
