@@ -23,11 +23,13 @@ const ChangeLanguage = () => {
     // };
 
     const domainMap = {
-      en: "retaini.com", // or retaini.com in prod
-      lt: "retaini.lt", // or retaini.lt in prod
+      en: "https://retaini.com",
+      lt: "https://retaini.lt",
     };
 
-    const path = window.location.pathname;
+    const path =
+      window.location.pathname + window.location.search + window.location.hash;
+
     window.location.href = `${domainMap[lang]}${path}`;
   };
 
