@@ -29,7 +29,7 @@ export async function generateMetadata({
       locale: locale === "lt" ? "lt_LT" : "en_US",
       images: [
         {
-          url: `https://${locale === "lt" ? "retaini.lt" : "retaini.com"}/og-image.jpg`,
+          url: `https://${locale === "lt" ? "retaini.lt" : "retaini.com"}/og-image.png`,
           width: 1200,
           height: 630,
           alt: t("MetaData.title"),
