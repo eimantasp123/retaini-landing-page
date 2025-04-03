@@ -27,8 +27,7 @@ const ChangeLanguage = () => {
       lt: "retaini.lt", // or retaini.lt in prod
     };
 
-    const path = window.location.pathname;
-    window.location.href = `${domainMap[lang]}${path}`;
+    window.location.href = `${domainMap[lang]}`;
   };
 
   return (
