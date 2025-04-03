@@ -15,17 +15,18 @@ const ChangeLanguage = () => {
 
   // Change language handler
   const handlerToggleLanguage = (lang: "en" | "lt") => {
+    console.log("locale", locale, "lang", lang);
     if (locale === lang) return; // If the current language is the same as the selected one, do nothing
 
-    // const domainMap = {
-    //   en: "http://localhost:3000", // or retaini.com in prod
-    //   lt: "http://localhost:3001", // or retaini.lt in prod
-    // };
-
     const domainMap = {
-      en: "https://retaini.com",
-      lt: "https://retaini.lt",
+      en: "http://localhost:3000", // or retaini.com in prod
+      lt: "http://localhost:3001", // or retaini.lt in prod
     };
+
+    // const domainMap = {
+    //   en: "https://retaini.com",
+    //   lt: "https://retaini.lt",
+    // };
 
     const path =
       window.location.pathname + window.location.search + window.location.hash;

@@ -7,14 +7,26 @@ export const routing = defineRouting({
   localePrefix: "as-needed",
   domains: [
     {
-      domain: "retaini.com",
+      domain: "www.retaini.com",
       defaultLocale: "en",
       locales: ["en"],
     },
     {
-      domain: "retaini.lt",
+      domain: "www.retaini.lt",
       defaultLocale: "lt",
       locales: ["lt"],
     },
   ],
+  // domains: [
+  //   {
+  //     domain: "localhost:3000",
+  //     defaultLocale: "en",
+  //     locales: ["en"],
+  //   },
+  //   {
+  //     domain: "localhost:3001",
+  //     defaultLocale: "lt",
+  //     locales: ["lt"],
+  //   },
+  // ],
 });
