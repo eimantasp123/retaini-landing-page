@@ -1,7 +1,5 @@
 import { defineRouting } from "next-intl/routing";
 
-const isDev = process.env.NODE_ENV === "development";
-
 // Define the routing configuration for next-intl
 export const routing = defineRouting({
   locales: ["en", "lt"],
@@ -9,12 +7,12 @@ export const routing = defineRouting({
   localePrefix: "as-needed",
   domains: [
     {
-      domain: isDev ? "localhost:3000" : "retaini.com",
+      domain: "retaini.com",
       defaultLocale: "en",
       locales: ["en"],
     },
     {
-      domain: isDev ? "localhost:3001" : "retaini.lt",
+      domain: "retaini.lt",
       defaultLocale: "lt",
       locales: ["lt"],
     },
