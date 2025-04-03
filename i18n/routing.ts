@@ -6,6 +6,7 @@ const isDev = process.env.NODE_ENV === "development";
 export const routing = defineRouting({
   locales: ["en", "lt"],
   defaultLocale: "en",
+  localeCookie: false,
   localePrefix: "as-needed",
   domains: [
     {
