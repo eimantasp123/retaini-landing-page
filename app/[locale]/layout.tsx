@@ -1,11 +1,10 @@
-import { Open_Sans, Sora } from "next/font/google";
-import "../../app/globals.css";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { Metadata } from "next";
+import { Open_Sans, Sora } from "next/font/google";
+import { notFound } from "next/navigation";
 import { Toaster } from "sonner";
+import "../../app/globals.css";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -18,12 +17,6 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
-
-export const metadata: Metadata = {
-  icons: {
-    icon: "/favicon.png", // arba .png arba .svg
-  },
-};
 
 export default async function RootLayout({
   children,

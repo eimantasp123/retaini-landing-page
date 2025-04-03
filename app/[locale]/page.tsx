@@ -20,6 +20,25 @@ export async function generateMetadata({
   return {
     title: t("MetaData.title"),
     description: t("MetaData.description"),
+    openGraph: {
+      title: t("MetaData.title"),
+      description: t("MetaData.description"),
+      url: locale === "lt" ? "https://retaini.lt" : "https://retaini.com",
+      siteName: "Retaini",
+      type: "website",
+      locale: locale === "lt" ? "lt_LT" : "en_US",
+      images: [
+        {
+          url: `https://${locale === "lt" ? "retaini.lt" : "retaini.com"}/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: t("MetaData.title"),
+        },
+      ],
+    },
+    icons: {
+      icon: "/favicon.png",
+    },
   };
 }
 
