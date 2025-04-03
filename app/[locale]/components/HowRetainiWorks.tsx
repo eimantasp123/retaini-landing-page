@@ -43,9 +43,9 @@ const HowRetainiWorks = () => {
                 </p>
               </div>
               <div className="relative flex flex-1 justify-center text-center">
-                <div className="absolute top-1/2 right-1/2 size-[250] translate-x-1/2 -translate-y-1/2 rounded-full bg-[#e9e0f4] lg:size-[380px]" />
-                <div className="absolute top-1/2 right-1/2 size-[180] translate-x-1/2 -translate-y-1/2 rounded-full bg-[#DACCEA] lg:size-[300px]" />
-                <div className="z-10 h-[385px] w-[200px] lg:h-[585px] lg:w-[330px]">
+                <div className="absolute top-1/2 right-1/2 size-[270] translate-x-1/2 -translate-y-1/2 rounded-full bg-[#e9e0f4] lg:size-[380px]" />
+                <div className="absolute top-1/2 right-1/2 size-[200] translate-x-1/2 -translate-y-1/2 rounded-full bg-[#DACCEA] lg:size-[300px]" />
+                <div className="z-10 h-[420px] w-[220px] lg:h-[585px] lg:w-[330px]">
                   <Image
                     src={step.image}
                     alt={step.title}

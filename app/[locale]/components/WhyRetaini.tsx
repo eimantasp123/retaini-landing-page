@@ -16,7 +16,12 @@ const WhyRetaini = () => {
           </p>
         </div>
         <div className="z-20 h-auto w-[380px] flex-1">
-          <Image src="/cta-image1.png" alt="Retaini" width={700} height={410} />
+          <Image
+            src={t("WhyRetaini.image")}
+            alt="Retaini"
+            width={700}
+            height={410}
+          />
         </div>
         <div className="absolute -bottom-10 left-[100px] z-0 w-[500px] rotate-[30deg] rounded-full border-2 border-white/30 bg-white/10 py-8 backdrop-blur-lg lg:-bottom-22 lg:left-[300px]"></div>
         <div className="absolute -top-10 -right-[70px] z-0 w-[500px] rotate-[30deg] rounded-full border-2 border-white/30 bg-white/10 py-8 backdrop-blur-lg lg:right-[0px]"></div>

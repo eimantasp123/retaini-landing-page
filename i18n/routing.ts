@@ -1,10 +1,22 @@
 import { defineRouting } from "next-intl/routing";
 
-export const routing = defineRouting({
-  // A list of all locales that are supported
-  locales: ["en", "lt"],
+const isDev = process.env.NODE_ENV === "development";
 
-  // Used when no locale matches
+// Define the routing configuration for next-intl
+export const routing = defineRouting({
+  locales: ["en", "lt"],
   defaultLocale: "en",
   localePrefix: "as-needed",
+  domains: [
+    {
+      domain: isDev ? "localhost:3000" : "retaini.com",
+      defaultLocale: "en",
+      locales: ["en"],
+    },
+    {
+      domain: isDev ? "localhost:3001" : "retaini.lt",
+      defaultLocale: "lt",
+      locales: ["lt"],
+    },
+  ],
 });

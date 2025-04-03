@@ -29,7 +29,7 @@ const AppFuncionality = () => {
   return (
     <section
       id="how-retaini-helps"
-      className="font-open-sans w-full px-4 py-10 lg:py-28"
+      className="font-open-sans w-full px-4 pb-10 md:py-10 lg:pb-28"
     >
       <div className="container mx-auto">
         <div className="mb-10 text-center lg:mb-16">

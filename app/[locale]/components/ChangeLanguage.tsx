@@ -6,38 +6,29 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { routing } from "@/i18n/routing";
-import { Globe } from "lucide-react";
+import { Languages } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 
 const ChangeLanguage = () => {
   const t = useTranslations("HomePage");
-  const router = useRouter();
-  const locale = useLocale();
+  const locale = useLocale() as "en" | "lt";
 
   // Change language handler
-  const handlerToggleLanguage = (lang: string) => {
+  const handlerToggleLanguage = (lang: "en" | "lt") => {
     if (locale === lang) return; // If the current language is the same as the selected one, do nothing
-    const pathname = window.location.pathname;
-    const segments = pathname.split("/").filter(Boolean);
-    const currentLocale = segments[0] as string;
 
-    if (
-      routing.locales.includes(
-        currentLocale as (typeof routing.locales)[number],
-      )
-    ) {
-      segments.shift();
-    }
+    // const domainMap = {
+    //   en: "http://localhost:3000", // or retaini.com in prod
+    //   lt: "http://localhost:3001", // or retaini.lt in prod
+    // };
 
-    const newPath = `/${lang}/${segments.join("/")}`;
+    const domainMap = {
+      en: "retaini.com", // or retaini.com in prod
+      lt: "retaini.lt", // or retaini.lt in prod
+    };
 
-    // Atnaujinam NEXT_LOCALE slapuką
-    document.cookie = `NEXT_LOCALE=${lang}; path=/`;
-
-    // Naviguojam į naują URL
-    router.replace(newPath);
+    const path = window.location.pathname;
+    window.location.href = `${domainMap[lang]}${path}`;
   };
 
   return (
@@ -45,7 +36,7 @@ const ChangeLanguage = () => {
       <DropdownMenu modal={false}>
         <DropdownMenuTrigger asChild>
           <span className="flex size-9 cursor-pointer items-center justify-center rounded-full bg-transparent transition-colors duration-200 ease-in-out hover:bg-white">
-            <Globe className="size-5" />
+            <Languages className="size-5" />
           </span>
         </DropdownMenuTrigger>
         <DropdownMenuContent>

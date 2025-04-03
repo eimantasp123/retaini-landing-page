@@ -2,14 +2,28 @@
 import { Link } from "@/i18n/navigation";
 import { motion, MotionConfig } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function MobileMenuButton() {
   const [active, setActive] = useState(false);
   const t = useTranslations("HomePage");
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
+        setActive(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
 
   return (
-    <div className="lg:hidden">
+    <div ref={ref} className="lg:hidden">
       <MotionConfig
         transition={{
           duration: 0.25,

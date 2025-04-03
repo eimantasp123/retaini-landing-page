@@ -19,8 +19,11 @@ const ratelimit = new Ratelimit({
   analytics: false,
 });
 
-// Define the email schema using Zod
-const emailSchema = z.string().email().max(150);
+// Define form data schema
+const formSchema = z.object({
+  email: z.string().email().max(100),
+  name: z.string().min(1).max(100),
+});
 
 /**
  * Function to join the waitlist.
@@ -29,7 +32,19 @@ const emailSchema = z.string().email().max(150);
  */
 export async function joinWaitlist(formData: FormData) {
   const t = await getTranslations("HomePage");
-  const email = formData.get("email");
+
+  const raw = {
+    email: formData.get("email"),
+    name: formData.get("name"),
+  };
+
+  // Validate email and name together
+  const validated = formSchema.safeParse(raw);
+  if (!validated.success) {
+    return { success: false, error: t("Waitlist.error.invalidEmail") };
+  }
+
+  const { email, name } = validated.data;
 
   // Get client IP from headers
   const ip = formData.get("ip")?.toString() || "anonymous";
@@ -40,17 +55,11 @@ export async function joinWaitlist(formData: FormData) {
     return { success: false, error: t("Waitlist.error.tooManyRequests") };
   }
 
-  // Validate email
-  const validated = emailSchema.safeParse(email);
-  if (!validated.success) {
-    return { success: false, error: t("Waitlist.error.invalidEmail") };
-  }
-
   // Check if email already exists in the database
   const { data: existing } = await supabase
     .from("waitlist")
     .select("id")
-    .eq("email", validated.data)
+    .eq("email", email)
     .single();
 
   // If email already exists, return an error message
@@ -59,9 +68,7 @@ export async function joinWaitlist(formData: FormData) {
   }
 
   // Insert email into the database
-  const { error } = await supabase
-    .from("waitlist")
-    .insert({ email: validated.data });
+  const { error } = await supabase.from("waitlist").insert({ email, name });
 
   // If there was an error inserting the email, return an error message
   if (error) {

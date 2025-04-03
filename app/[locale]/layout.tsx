@@ -45,7 +45,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${sora.variable} ${openSans.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        <Toaster richColors position="bottom-center" />
+        <Toaster richColors position="top-center" />
       </body>
     </html>
   );
