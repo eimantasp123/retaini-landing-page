@@ -47,7 +47,7 @@ const AppFuncionality = () => {
           {Object.entries(features).map(([key, feature]) => (
             <div
               key={key}
-              className="shadow-soft flex flex-col items-center gap-3 rounded-3xl border border-neutral-200/50 bg-[#e9d5fe] p-4 lg:flex-row lg:gap-4 lg:p-6"
+              className="shadow-soft flex flex-col items-center gap-3 rounded-3xl border border-neutral-200/50 bg-gradient-to-br from-[#ede8f5]/90 from-25% to-[#dfc6f9d2]/80 p-4 lg:flex-row lg:gap-4 lg:p-6"
             >
               <div className="flex items-center justify-center lg:w-[12%]">
                 <span className="flex size-12 items-center justify-center rounded-full bg-white text-xl">
