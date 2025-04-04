@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="h-full w-full bg-cover bg-fixed bg-center"
           style={{ backgroundImage: `url('/bg1.jpg')` }} // Replace with your image path
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#f3f0f7]/90 from-25% to-[#dabef7d5]/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#ede8f5]/90 from-25% to-[#bf8df5d3]/80" />
       </div>
 
       {/* Content */}
@@ -32,7 +32,7 @@ const HeroSection = () => {
             {t("Hero.joinToWaitListDescription")}
           </h5>
           <JoinToWaitlistForm />
-          <div className="mt-8 flex items-center justify-center gap-3 rounded-full px-4 py-2 text-black sm:flex-row lg:mt-4">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 rounded-full px-4 py-2 text-black sm:flex-row lg:mt-4">
             {/* Avatars */}
             <div className="flex -space-x-2">
               <Image

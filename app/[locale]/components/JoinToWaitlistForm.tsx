@@ -43,7 +43,7 @@ const JoinToWaitlistForm = ({
         <DialogTrigger asChild>
           <button
             onClick={() => setOpen(true)}
-            className={`flex cursor-pointer items-center justify-center rounded-full px-6 py-4 ${buttonColor} text-base font-medium ${buttonTextColor} transition-colors duration-300 ease-in-out ${buttonHoverColor}`}
+            className={`flex min-w-[250px] cursor-pointer items-center justify-center rounded-full px-6 py-4 ${buttonColor} text-base font-medium ${buttonTextColor} transition-colors duration-300 ease-in-out ${buttonHoverColor}`}
             type="submit"
           >
             {t("Hero.joinToWaitlist")}
