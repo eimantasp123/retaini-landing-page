@@ -5,6 +5,7 @@ import { Open_Sans, Sora } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Toaster } from "sonner";
 import "../../app/globals.css";
+import FacebookPixel from "./components/FacebookPixel";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -37,6 +38,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`${sora.variable} ${openSans.variable} antialiased`}>
+        <FacebookPixel />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Toaster richColors position="top-center" />
       </body>
