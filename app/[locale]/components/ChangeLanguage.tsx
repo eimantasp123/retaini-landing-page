@@ -24,8 +24,8 @@ const ChangeLanguage = () => {
     // };
 
     const domainMap = {
-      en: "https://retaini.com",
-      lt: "https://retaini.lt",
+      en: "https://www.retaini.com",
+      lt: "https://www.retaini.lt",
     };
 
     const path =
