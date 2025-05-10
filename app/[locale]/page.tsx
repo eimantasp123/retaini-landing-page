@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import HowRetainiWorks from "./components/HowRetainiWorks";
-import RetainiIdea from "./components/RetainiIdea";
+// import RetainiIdea from "./components/RetainiIdea";
 import WhyRetaini from "./components/WhyRetaini";
 
 import { getTranslations } from "next-intl/server";
