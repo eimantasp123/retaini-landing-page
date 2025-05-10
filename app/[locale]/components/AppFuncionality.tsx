@@ -29,7 +29,7 @@ const AppFuncionality = () => {
   return (
     <section
       id="how-retaini-helps"
-      className="font-open-sans w-full px-4 pb-10 md:py-10 lg:pb-28"
+      className="font-open-sans w-full px-4 pb-10 md:py-10 lg:py-28"
     >
       <div className="container mx-auto">
         <div className="mb-10 text-center lg:mb-16">
@@ -47,7 +47,7 @@ const AppFuncionality = () => {
           {Object.entries(features).map(([key, feature]) => (
             <div
               key={key}
-              className="shadow-soft flex flex-col items-center gap-3 rounded-3xl border border-neutral-200/50 bg-gradient-to-br from-[#ede8f5]/90 from-25% to-[#dfc6f9d2]/80 p-4 lg:flex-row lg:gap-4 lg:p-6"
+              className="shadow-soft flex flex-col items-center gap-3 rounded-3xl border border-neutral-200/50 bg-neutral-50 p-4 lg:flex-row lg:gap-4 lg:p-6"
             >
               <div className="flex items-center justify-center lg:w-[12%]">
                 <span className="flex size-12 items-center justify-center rounded-full bg-white text-xl">

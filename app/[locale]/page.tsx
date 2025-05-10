@@ -58,7 +58,7 @@ export default function Page() {
       <HowRetainiWorks />
 
       {/* Retaini Idea */}
-      <RetainiIdea />
+      {/* <RetainiIdea /> */}
 
       {/* Retaini funcionality */}
       <AppFuncionality />
